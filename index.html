@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kit Estampados - +850 Mil Diseños para Sublimación, DTG y DTF</title>
+  <meta name="description" content="Catálogo completo con más de 850 mil diseños listos y editables para sublimación, DTG y DTF con actualizaciones semanales." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FFFDFD;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .font-display {
+      font-family: 'Montserrat', sans-serif;
+    }
+    @keyframes pulseCta {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    .animate-pulse-cta {
+      animation: pulseCta 2.2s infinite ease-in-out;
+    }
+    .slider-container {
+      touch-action: none;
+      user-select: none;
+    }
+  </style>
+</head>
+<body class="selection:bg-pink-500 selection:text-white flex flex-col min-h-screen">
+
+  <!-- 1. TOP URGENCY BAR -->
+  <aside id="urgency-top-bar" class="bg-gradient-to-r from-rose-600 via-pink-600 to-amber-500 text-white py-2 sm:py-2.5 px-3 sm:px-4 shadow-md sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center gap-1.5">
+      <div class="flex items-center justify-center gap-1.5 font-black text-xs sm:text-sm tracking-wide text-white">
+        <span>🔥 ¡ATENCIÓN! La oferta con el precio promocional termina en:</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 bg-black/35 px-3 py-1 rounded-lg border border-white/25">
+        <div class="flex items-center font-mono font-black text-sm sm:text-base tracking-widest text-white">
+          <span id="top-bar-minutes" class="bg-slate-950/80 px-2 py-0.5 rounded text-amber-300">14</span>
+          <span class="mx-1 text-amber-300 animate-pulse">:</span>
+          <span id="top-bar-seconds" class="bg-slate-950/80 px-2 py-0.5 rounded text-amber-300">59</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="flex-1">
+
+    <!-- 2. HERO SECTION -->
+    <header id="hero-section" class="relative overflow-hidden bg-gradient-to-b from-pink-50/70 via-white to-amber-50/30 pt-8 pb-14 sm:pt-12 sm:pb-20 border-b border-pink-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          
+          <!-- Left Column -->
+          <div class="lg:col-span-6 text-center lg:text-left">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.65rem] font-black text-slate-900 tracking-tight leading-[1.2] mb-5">
+              Crea <span class="text-[#FF5500]">tus diseños</span> para sublimación, DTG y DTF en menos de <span class="text-[#FF5500]">5 minutos</span>
+            </h1>
+            <p class="text-sm sm:text-base md:text-lg text-slate-950 font-bold leading-relaxed max-w-lg mx-auto lg:mx-0">
+              Ten a tu disposición un catálogo completo de sublimación, DTG y DTF, con +850 mil diseños y materiales para todo tipo de producto.
+            </p>
+          </div>
+
+          <!-- Right Column: Mockup + CTA -->
+          <div class="lg:col-span-6 relative flex flex-col items-center">
+            <div className="relative mx-auto max-w-md lg:max-w-none w-full p-2 sm:p-4">
+              <img
+                src="/assets/hero-mockup.webp"
+                alt="Mockup oficial de diseños Kit Estamparia"
+                class="w-full max-w-lg lg:max-w-xl mx-auto object-contain drop-shadow-2xl hover:scale-[1.02] transition-transform duration-500"
+              />
+            </div>
+            <div class="w-full mt-2 sm:mt-4 flex flex-col items-center">
+              <button
+                onclick="scrollToOffer()"
+                class="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-5 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-base sm:text-lg lg:text-xl rounded-2xl shadow-xl shadow-amber-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 border-b-4 border-amber-600 cursor-pointer animate-pulse-cta text-center"
+              >
+                <span>¡SÍ! Quiero acceder a todos los diseños ahora mismo</span>
+                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- 3. SCARCITY BLOCK -->
+    <section id="scarcity-block" class="bg-slate-950 text-white py-6 sm:py-8 px-4 border-y-4 border-amber-400 text-center relative">
+      <div class="max-w-4xl mx-auto relative z-10">
+        <div class="inline-flex items-center gap-2 bg-rose-600/30 border border-rose-500/50 text-rose-300 px-3 py-1 rounded-full text-xs sm:text-sm font-black mb-3 uppercase tracking-wider">
+          <span>⚠️ ¡OFERTA LIMITADA!</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-amber-300 tracking-tight uppercase mb-4">
+          SOLO 3 CUPOS DISPONIBLES
+        </h2>
+        <div class="max-w-md mx-auto bg-slate-800/90 rounded-full p-1 border border-slate-700 shadow-inner">
+          <div class="relative flex items-center justify-between px-3 py-1.5">
+            <div class="absolute left-0 top-0 bottom-0 bg-gradient-to-r from-pink-600 via-rose-500 to-amber-500 rounded-full w-[97%]"></div>
+            <span class="relative z-10 text-xs font-bold text-white">👥 97 de 100 cupos reservados</span>
+            <span class="relative z-10 text-xs font-black text-slate-950 bg-amber-300 px-2.5 py-0.5 rounded-full animate-pulse">¡Solo 3 Cupos!</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. BENEFITS HIGHLIGHT CARDS & CAROUSEL -->
+    <section id="benefits-section" class="py-12 sm:py-16 bg-gradient-to-b from-white via-orange-50/20 to-white border-b border-orange-100/60 overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- 3 Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-10 sm:mb-12">
+          
+          <div class="rounded-3xl p-7 sm:p-8 text-center text-white bg-gradient-to-br from-[#FF5500] via-[#FF4500] to-[#E63900] shadow-xl hover:-translate-y-1 transition-all duration-300 border border-orange-400/40">
+            <div class="mb-5 w-16 h-16 rounded-2xl bg-white/20 mx-auto flex items-center justify-center text-3xl">🚀</div>
+            <h3 class="text-2xl font-black text-white mb-3.5 tracking-tight">Impulsa tus ventas</h3>
+            <p class="text-white/95 text-sm sm:text-[15px] leading-relaxed font-medium">
+              Excelente oportunidad de facturar alto con sublimación y además recibe <strong class="text-white font-black underline">nuevas artes cada semana sin costos adicionales</strong>!
+            </p>
+          </div>
+
+          <div class="rounded-3xl p-7 sm:p-8 text-center text-white bg-gradient-to-br from-[#FF5500] via-[#FF4500] to-[#E63900] shadow-xl hover:-translate-y-1 transition-all duration-300 border border-orange-400/40">
+            <div class="mb-5 w-16 h-16 rounded-2xl bg-white/20 mx-auto flex items-center justify-center text-3xl">⏱️</div>
+            <h3 class="text-2xl font-black text-white mb-3.5 tracking-tight">Optimiza tu tiempo</h3>
+            <p class="text-white/95 text-sm sm:text-[15px] leading-relaxed font-medium">
+              Deja de perder tiempo con artes de pésima calidad y en baja resolución y <strong class="text-white font-black underline">recibe + de 850 mil artes listas y editables</strong>.
+            </p>
+          </div>
+
+          <div class="rounded-3xl p-7 sm:p-8 text-center text-white bg-gradient-to-br from-[#FF5500] via-[#FF4500] to-[#E63900] shadow-xl hover:-translate-y-1 transition-all duration-300 border border-orange-400/40">
+            <div class="mb-5 w-16 h-16 rounded-2xl bg-white/20 mx-auto flex items-center justify-center text-3xl">❤️</div>
+            <h3 class="text-2xl font-black text-white mb-3.5 tracking-tight">Plataforma facilitada</h3>
+            <p class="text-white/95 text-sm sm:text-[15px] leading-relaxed font-medium">
+              Acceso online de todas las artes a través de tu e-mail. Accede desde donde quieras, <strong class="text-white font-black underline">cuando quieras y de forma vitalicia</strong>!
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Automatic Carousel Container -->
+        <div class="relative max-w-4xl mx-auto">
+          <div id="carousel-track" class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 items-center">
+            <!-- Populated via JavaScript -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. WHAT YOU GET GRID (12 Categories with Animated Counter) -->
+    <section id="what-you-get-section" class="py-14 sm:py-20 bg-slate-50/60 border-b border-pink-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.6rem] font-black text-slate-900 tracking-tight leading-tight">
+            ¿Qué vas a recibir? — Diseños para todos los temas que puedas imaginar, siempre actualizados
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="categories-grid">
+          <!-- Rendered with counters -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. +100 THEMES CLOUD WITH SEARCH -->
+    <section id="themes-cloud-section" class="py-14 sm:py-20 bg-white border-b border-pink-100 text-center">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight uppercase mb-6">
+          +100 TEMAS INCLUIDOS
+        </h2>
+        <div class="max-w-md mx-auto relative mb-8">
+          <input
+            id="theme-search-input"
+            type="text"
+            placeholder="Buscar tema (ej. Anime, Fitness, San Valentín...)"
+            class="w-full px-5 py-3 rounded-full border border-pink-200 bg-pink-50/40 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-pink-500 shadow-sm"
+          />
+        </div>
+        <div id="themes-tags-container" class="flex flex-wrap justify-center gap-2 sm:gap-2.5 max-w-5xl mx-auto">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. BEFORE / AFTER INTERACTIVE COMPARISON SLIDERS -->
+    <section id="before-after-section" class="py-16 sm:py-24 bg-white border-b border-pink-100 relative overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-100 border border-pink-200 text-pink-700 text-xs sm:text-sm font-black mb-4 uppercase tracking-wider">
+            <span>✨ Mira la calidad en la práctica</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-3">
+            Miles de artes listas para facilitar tu trabajo
+          </h2>
+          <p class="text-base sm:text-lg md:text-xl font-black text-slate-900 uppercase tracking-wide">
+            ¡Actualizaciones SEMANALES incluidas SIN COSTOS ADICIONALES!
+          </p>
+        </div>
+
+        <!-- 2 Comparison Sliders -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
+          
+          <!-- Slider 1: Floral Cross -->
+          <div class="flex flex-col items-center">
+            <div class="slider-container relative aspect-square w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 bg-white cursor-ew-resize select-none" id="slider-1">
+              <img src="/assets/slider-cross-mockup.webp" alt="Camiseta física estampada con el diseño" class="w-full h-full object-cover pointer-events-none select-none" />
+              <div class="slider-clip absolute inset-0 pointer-events-none select-none" style="clip-path: inset(0 50% 0 0);">
+                <img src="/assets/slider-cross-art.webp" alt="Arte digital cruz floral" class="w-full h-full object-cover bg-white pointer-events-none select-none" />
+              </div>
+              <div class="slider-divider absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] pointer-events-none" style="left: 50%;">
+                <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white text-slate-900 shadow-2xl border-2 border-white flex items-center justify-center font-bold">
+                  ↔
+                </div>
+              </div>
+              <div class="absolute bottom-3.5 left-3.5 bg-slate-950/80 text-white text-xs sm:text-sm font-black px-3 py-1.5 rounded-xl border border-white/20 pointer-events-none">
+                ✨ Nuestro Diseño
+              </div>
+              <div class="absolute bottom-3.5 right-3.5 bg-slate-950/80 text-white text-xs sm:text-sm font-black px-3 py-1.5 rounded-xl border border-white/20 pointer-events-none">
+                🛍️ Tu Producto
+              </div>
+            </div>
+            <p class="mt-3 text-xs sm:text-sm text-slate-500 font-medium text-center">
+              Desliza la barra central para comparar el arte digital con el producto terminado
+            </p>
+          </div>
+
+          <!-- Slider 2: Naruto -->
+          <div class="flex flex-col items-center">
+            <div class="slider-container relative aspect-square w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 bg-white cursor-ew-resize select-none" id="slider-2">
+              <img src="/assets/slider-naruto-mockup.webp" alt="Camiseta física Naruto estampada" class="w-full h-full object-cover pointer-events-none select-none" />
+              <div class="slider-clip absolute inset-0 pointer-events-none select-none" style="clip-path: inset(0 50% 0 0);">
+                <img src="/assets/slider-naruto-art.webp" alt="Arte digital Naruto anime" class="w-full h-full object-cover bg-white pointer-events-none select-none" />
+              </div>
+              <div class="slider-divider absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] pointer-events-none" style="left: 50%;">
+                <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white text-slate-900 shadow-2xl border-2 border-white flex items-center justify-center font-bold">
+                  ↔
+                </div>
+              </div>
+              <div class="absolute bottom-3.5 left-3.5 bg-slate-950/80 text-white text-xs sm:text-sm font-black px-3 py-1.5 rounded-xl border border-white/20 pointer-events-none">
+                ✨ Nuestro Diseño
+              </div>
+              <div class="absolute bottom-3.5 right-3.5 bg-slate-950/80 text-white text-xs sm:text-sm font-black px-3 py-1.5 rounded-xl border border-white/20 pointer-events-none">
+                🛍️ Tu Producto
+              </div>
+            </div>
+            <p class="mt-3 text-xs sm:text-sm text-slate-500 font-medium text-center">
+              Desliza la barra central para comparar el arte digital con el producto terminado
+            </p>
+          </div>
+
+        </div>
+
+        <!-- 10 Real Products Gallery Grid -->
+        <div class="mb-12 sm:mb-14">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4" id="gallery-grid">
+            <!-- 10 photos populated via HTML -->
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-1.webp" alt="Taza estampada" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-2.webp" alt="Camiseta física" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-3.webp" alt="Cojín estampado" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-4.webp" alt="Cuadro decorativo" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-5.webp" alt="Chanclas estampadas" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-6.webp" alt="Gorra bordada" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-7.webp" alt="Panel de fiesta infantil" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-8.webp" alt="Mug mágico" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-9.webp" alt="Sudadera urbana" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-10.webp" alt="Bolsa ecológica tote" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            onclick="scrollToOffer()"
+            class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white font-black text-base sm:text-lg md:text-xl px-8 sm:px-12 py-4 sm:py-5 rounded-2xl shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer w-full sm:w-auto"
+          >
+            <span>🔥 ¡SÍ! ¡Quiero tener acceso a todas las artes ahora mismo!</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. CHECKLIST SECTION -->
+    <section id="checklist-section" class="py-14 sm:py-20 bg-gradient-to-b from-white via-pink-50/30 to-white border-b border-pink-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+            Con Kit Estampados tú:
+          </h2>
+        </div>
+        <div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-pink-100 shadow-xl space-y-4 sm:space-y-5">
+          <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">ACCESO VITALICIO (cupos limitados)</p></div>
+          <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">Recibes actualizaciones semanales con nuevos materiales</p></div>
+          <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">No pagas mensualidad, el pago es único</p></div>
+          <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">Acceso a +850 mil diseños para sublimación y otros materiales</p></div>
+          <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">E-Book Guía Completa de Sublimación actualizada</p></div>
+          <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">Lista actualizada de proveedores VIP</p></div>
+          <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">Acceso a +6 bonos exclusivos</p></div>
+          <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">Videoclases incluidas</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. SECOND CTA & COUNTDOWN TIMER -->
+    <section id="second-countdown-cta" class="py-12 sm:py-16 bg-gradient-to-r from-rose-700 via-pink-600 to-amber-600 text-white relative text-center">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight mb-6">
+          Tu cupo con 90% OFF expira en:
+        </h2>
+
+        <!-- Timer -->
+        <div class="flex items-center justify-center gap-2 sm:gap-3 mb-6">
+          <div class="flex flex-col items-center">
+            <div class="w-16 sm:w-20 h-16 sm:h-20 bg-slate-950/85 rounded-2xl flex items-center justify-center border border-white/20 shadow-lg">
+              <span id="countdown-hours" class="font-mono font-black text-2xl sm:text-4xl text-amber-400">00</span>
+            </div>
+            <span class="text-[11px] sm:text-xs font-bold text-pink-200 mt-1.5 uppercase">Horas</span>
+          </div>
+          <span class="font-mono font-black text-2xl sm:text-3xl text-amber-300 -mt-6">:</span>
+          <div class="flex flex-col items-center">
+            <div class="w-16 sm:w-20 h-16 sm:h-20 bg-slate-950/85 rounded-2xl flex items-center justify-center border border-white/20 shadow-lg">
+              <span id="countdown-minutes" class="font-mono font-black text-2xl sm:text-4xl text-amber-400">14</span>
+            </div>
+            <span class="text-[11px] sm:text-xs font-bold text-pink-200 mt-1.5 uppercase">Minutos</span>
+          </div>
+          <span class="font-mono font-black text-2xl sm:text-3xl text-amber-300 -mt-6">:</span>
+          <div class="flex flex-col items-center">
+            <div class="w-16 sm:w-20 h-16 sm:h-20 bg-slate-950/85 rounded-2xl flex items-center justify-center border border-white/20 shadow-lg">
+              <span id="countdown-seconds" class="font-mono font-black text-2xl sm:text-4xl text-amber-400">59</span>
+            </div>
+            <span class="text-[11px] sm:text-xs font-bold text-pink-200 mt-1.5 uppercase">Segundos</span>
+          </div>
+        </div>
+
+        <!-- Video showcase -->
+        <div class="my-7 max-w-xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30 bg-slate-950/40 p-2">
+          <video autoPlay loop muted playsInline preload="metadata" poster="/assets/giftpacotert_poster.webp" class="w-full h-auto rounded-xl object-contain mx-auto">
+            <source src="/assets/giftpacotert_fast.webm" type="video/webm" />
+            <source src="/assets/giftpacotert_fast.mp4" type="video/mp4" />
+            <img src="/assets/giftpacotert.webp" alt="Pack showcase" class="w-full h-auto rounded-xl object-contain mx-auto" />
+          </video>
+        </div>
+
+        <p class="text-white text-base sm:text-lg md:text-xl font-bold max-w-2xl mx-auto mb-8">
+          En esta promoción vas a llevarte: 90% OFF + 6 Bonos + Actualizaciones Vitalicias Semanales
+        </p>
+
+        <div class="flex flex-col items-center">
+          <button
+            onclick="scrollToOffer()"
+            class="w-full sm:w-auto px-8 py-4 sm:py-5 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-lg sm:text-xl rounded-2xl shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-3 border-b-4 border-amber-600 cursor-pointer animate-pulse-cta"
+          >
+            <span>¡SÍ! Quiero acceder a todos los diseños ahora mismo</span>
+            <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+          <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-amber-100 mt-4">
+            <span>🛡️ Compra 100% segura • Acceso instantáneo • 7 días de garantía</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. VALUE STACK & FINAL PRICE OFFER -->
+    <section id="value-stack-section" class="py-14 sm:py-20 bg-slate-50 border-b border-pink-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="bg-white rounded-3xl border-2 border-pink-200/80 shadow-2xl overflow-hidden">
+          
+          <div class="bg-gradient-to-r from-pink-600 to-rose-600 text-white p-4 sm:p-5 flex items-center justify-between">
+            <span class="font-extrabold text-sm sm:text-base tracking-wide uppercase">Materiales & Diseños Incluidos</span>
+            <span class="font-extrabold text-sm sm:text-base tracking-wide uppercase">Valor</span>
+          </div>
+
+          <div class="divide-y divide-slate-100 p-4 sm:p-8" id="value-stack-items">
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +25.000 diseños para Camisetas</span><span class="font-bold text-slate-500 font-mono">$19</span></div>
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +16.000 diseños para Tazas</span><span class="font-bold text-slate-500 font-mono">$19</span></div>
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +5.000 diseños para Cuadros</span><span class="font-bold text-slate-500 font-mono">$19</span></div>
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +2.100 diseños para Cojines</span><span class="font-bold text-slate-500 font-mono">$14</span></div>
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +1.200 diseños para Mascarillas</span><span class="font-bold text-slate-500 font-mono">$15</span></div>
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +1.400 diseños para Sandalias/Chanclas</span><span class="font-bold text-slate-500 font-mono">$15</span></div>
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +10.200 diseños para Paneles Infantiles</span><span class="font-bold text-slate-500 font-mono">$19</span></div>
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +2.000 diseños para Redes Sociales</span><span class="font-bold text-slate-500 font-mono">$19</span></div>
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +720 Moldes de Ropa</span><span class="font-bold text-slate-500 font-mono">$9</span></div>
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +20.000 Fuentes Profesionales</span><span class="font-bold text-slate-500 font-mono">$9</span></div>
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +50.000 Presets de Fotografía</span><span class="font-bold text-slate-500 font-mono">$9</span></div>
+            <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +60.000 Logotipos Editables</span><span class="font-bold text-slate-500 font-mono">$9</span></div>
+          </div>
+
+          <div class="bg-gradient-to-b from-amber-50/50 to-pink-50/80 p-6 sm:p-10 border-t-2 border-dashed border-pink-200 text-center">
+            <h3 class="text-2xl sm:text-3xl md:text-4xl font-black text-rose-600 tracking-tight uppercase mb-4">
+              SOLO 3 CUPOS CON 90% DE DESCUENTO
+            </h3>
+            <div class="mb-6">
+              <div class="inline-block bg-slate-950 text-amber-300 font-black text-2xl sm:text-3xl md:text-4xl px-6 py-3 rounded-2xl shadow-lg border border-amber-400">
+                DE US$197 POR SOLO: US$19
+              </div>
+            </div>
+            <div class="max-w-md mx-auto">
+              <button
+                onclick="openCheckoutModal()"
+                class="w-full py-4 sm:py-5 px-6 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-lg sm:text-xl rounded-2xl shadow-xl shadow-amber-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-3 border-b-4 border-amber-600 cursor-pointer animate-pulse-cta"
+              >
+                <span>¡SÍ! Quiero acceder a todos los diseños ahora mismo</span>
+                <svg class="w-6 h-6 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+              <div class="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs font-bold text-slate-600">
+                <span>🔒 Cifrado SSL 256 bits</span>
+                <span>🛡️ Garantía 7 Días</span>
+                <span>💳 Tarjetas, PayPal y Efectivo</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 11. WHATSAPP TESTIMONIALS -->
+    <section id="testimonials-section" class="py-16 sm:py-24 bg-gradient-to-b from-white via-amber-50/20 to-white border-b border-pink-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs sm:text-sm font-bold mb-4">
+            <span>💬 Resultados y Experiencias Reales</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-4">
+            Testimonios
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto">
+            Mira lo que dicen nuestros clientes directamente en sus conversaciones de soporte y seguimiento por WhatsApp:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-stretch" id="whatsapp-testimonials-grid">
+          <!-- WhatsApp Cards rendered via JS / HTML below -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. SURPRISE BONUS BLOCK -->
+    <section id="surprise-bonus-section" class="py-14 sm:py-20 bg-gradient-to-b from-amber-50/50 via-white to-pink-50/40 border-b border-pink-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-tr from-slate-950 via-slate-900 to-rose-950 text-white rounded-3xl p-6 sm:p-10 border-2 border-amber-400/70 shadow-2xl">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
+            <div class="md:col-span-4 flex justify-center">
+              <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-3xl bg-gradient-to-br from-amber-400 via-rose-500 to-pink-600 p-1 flex items-center justify-center shadow-xl animate-pulse">
+                <div class="w-full h-full bg-slate-900 rounded-[22px] flex flex-col items-center justify-center">
+                  <span class="text-5xl">🎁</span>
+                  <span class="text-xs font-black text-pink-300 uppercase tracking-widest mt-2">SORPRESA</span>
+                </div>
+              </div>
+            </div>
+            <div class="md:col-span-8 text-center md:text-left">
+              <span class="inline-block bg-amber-400 text-slate-950 font-black text-xs sm:text-sm px-3.5 py-1 rounded-full uppercase tracking-wider mb-3">
+                Bono Exclusivo
+              </span>
+              <h3 class="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight leading-tight mb-3 uppercase">
+                CAJA SORPRESA
+              </h3>
+              <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                Separamos un mega paquete de materiales bonus, totalmente sorpresa. Actualmente el paquete sorpresa contiene +13GB de archivos exclusivos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. EMOTIONAL REFLECTION / PAIN BLOCK -->
+    <section id="emotional-reflection-section" class="py-16 sm:py-24 bg-slate-900 text-slate-100 border-y border-slate-800 text-center">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <p class="text-xl sm:text-2xl font-black text-amber-300 tracking-tight leading-snug">
+          Falta poco para el éxito en muchos aspectos, pero depende de ti...
+        </p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight leading-tight">
+          ¿Hasta cuándo vas a perder tiempo rompiéndote la cabeza creando diseños desde cero?
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-medium">
+          Reflexiona: cuanto más tiempo pierdes, menos produces, menos ganas, más trabajas y con menor ganancia diaria.
+        </p>
+        <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
+          Así, cada vez se aleja más tu libertad financiera y tu libertad de tiempo...
+        </p>
+      </div>
+    </section>
+
+    <!-- 14. FAQ ACCORDION -->
+    <section id="faq-section" class="py-14 sm:py-20 bg-white border-b border-pink-100">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10 sm:mb-14">
+          <span class="bg-pink-100 text-pink-700 text-xs sm:text-sm font-black px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
+            RESPUESTAS A TUS DUDAS
+          </span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+            Preguntas Frecuentes
+          </h2>
+          <p class="mt-3 text-base sm:text-lg text-slate-600">
+            Haz clic en cualquier pregunta para ver la respuesta detallada.
+          </p>
+        </div>
+
+        <div class="space-y-3.5" id="faq-list">
+          <!-- Accordion items rendered below -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 15. FOOTER -->
+  <footer id="main-footer" class="bg-slate-950 text-slate-400 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-center sm:text-left">
+        <div class="flex items-center gap-4">
+          <span class="text-sm font-semibold text-slate-300">Síguenos:</span>
+          <a href="#facebook" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-blue-400 transition-colors">FB</a>
+          <a href="#instagram" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-pink-400 transition-colors">IG</a>
+        </div>
+        <div class="flex items-center gap-3 text-xs font-semibold text-slate-300 bg-slate-900 px-4 py-2 rounded-xl border border-slate-800">
+          <span>🛡️ Compra Segura</span>
+          <span class="text-slate-700">|</span>
+          <span>🔒 SSL 256 bits</span>
+        </div>
+      </div>
+      <div class="pt-8 text-center text-xs sm:text-sm text-slate-500 max-w-4xl mx-auto">
+        <p class="border border-dashed border-slate-800 p-4 rounded-xl text-slate-400 leading-relaxed">
+          [Espacio para datos legales de la empresa: Razón Social / NIT / RFC / Políticas y Términos Legales - Todos los derechos reservados]
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHECKOUT MODAL -->
+  <div id="checkout-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/70 backdrop-blur-xs">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border-2 border-pink-200 relative">
+      <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1.5 rounded-full hover:bg-slate-100 transition-colors text-xl font-bold cursor-pointer">
+        ✕
+      </button>
+
+      <div id="modal-form-view">
+        <div class="text-center mb-6">
+          <span class="inline-block bg-pink-100 text-pink-700 text-xs font-black px-3 py-1 rounded-full uppercase mb-2">
+            ⚡ Pago Seguro Cifrado 256 bits
+          </span>
+          <h3 class="text-2xl font-black text-slate-900">
+            Estás a un paso de acceder a todos los diseños
+          </h3>
+          <p class="text-sm text-slate-600 mt-1">
+            Acceso vitalicio con 90% de descuento por solo <strong class="text-pink-600 font-bold">US$19</strong>
+          </p>
+        </div>
+
+        <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nombre Completo</label>
+            <input type="text" id="buyer-name" required placeholder="Ej. Juan Pérez" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Correo Electrónico (Aquí recibirás tus accesos)</label>
+            <input type="email" id="buyer-email" required placeholder="tu-correo@ejemplo.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500" />
+          </div>
+          <div class="bg-amber-50 rounded-xl p-3 border border-amber-200 text-xs text-amber-900">
+            <strong>🔒 Garantía incondicional de satisfacción</strong>
+            <p class="text-slate-600 mt-0.5">Acceso vitalicio inmediato a los materiales a través de Hotmart.</p>
+          </div>
+          <button type="submit" class="w-full py-4 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 text-slate-950 font-black text-lg rounded-xl shadow-lg border-b-4 border-amber-600 cursor-pointer">
+            COMPLETAR ACCESO POR US$19
+          </button>
+        </form>
+      </div>
+
+      <div id="modal-success-view" class="hidden text-center py-6 space-y-4">
+        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-3xl font-black">
+          ✓
+        </div>
+        <h3 class="text-2xl font-black text-slate-900" id="success-title">
+          ¡Felicitaciones!
+        </h3>
+        <p class="text-sm text-slate-600 max-w-sm mx-auto">
+          En un entorno real de ventas, aquí el comprador es redirigido a Hotmart para completar la orden.
+        </p>
+        <div class="bg-pink-50 p-4 rounded-2xl border border-pink-100 text-xs text-slate-700" id="success-email-notice">
+          Hemos enviado las credenciales de prueba.
+        </div>
+        <button onclick="closeCheckoutModal()" class="px-6 py-2.5 bg-slate-900 text-white text-sm font-bold rounded-xl cursor-pointer">
+          Volver a la página
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- EMBEDDED JAVASCRIPT LOGIC -->
+  <script>
+    // Smooth scroll to offer
+    function scrollToOffer() {
+      const section = document.getElementById('value-stack-section');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Modal controls
+    function openCheckoutModal() {
+      const modal = document.getElementById('checkout-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeCheckoutModal() {
+      const modal = document.getElementById('checkout-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.getElementById('modal-form-view').classList.remove('hidden');
+      document.getElementById('modal-success-view').classList.add('hidden');
+    }
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('buyer-name').value;
+      const email = document.getElementById('buyer-email').value;
+      document.getElementById('modal-form-view').classList.add('hidden');
+      document.getElementById('modal-success-view').classList.remove('hidden');
+      document.getElementById('success-title').textContent = `¡Felicitaciones, ${name || 'Emprendedor'}!`;
+      document.getElementById('success-email-notice').innerHTML = `Hemos enviado las credenciales de prueba a: <strong class="text-pink-600">${email}</strong>`;
+    }
+
+    // 1. Top Bar Countdown (14:59 loop)
+    (function initTopCountdown() {
+      let timeLeft = 14 * 60 + 59;
+      const minEl = document.getElementById('top-bar-minutes');
+      const secEl = document.getElementById('top-bar-seconds');
+      const h2El = document.getElementById('countdown-hours');
+      const m2El = document.getElementById('countdown-minutes');
+      const s2El = document.getElementById('countdown-seconds');
+
+      setInterval(() => {
+        if (timeLeft <= 0) timeLeft = 14 * 60 + 59;
+        timeLeft--;
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        const formattedM = String(mins).padStart(2, '0');
+        const formattedS = String(secs).padStart(2, '0');
+
+        if (minEl && secEl) {
+          minEl.textContent = formattedM;
+          secEl.textContent = formattedS;
+        }
+        if (h2El && m2El && s2El) {
+          h2El.textContent = '00';
+          m2El.textContent = formattedM;
+          s2El.textContent = formattedS;
+        }
+      }, 1000);
+    })();
+
+    // 2. Carousel Rotation (Benefits section)
+    (function initCarousel() {
+      const slides = [
+        { src: '/assets/carousel-1.webp', alt: 'Diseño Streetwear' },
+        { src: '/assets/carousel-2.webp', alt: 'Diseño Move with Flow' },
+        { src: '/assets/carousel-3.webp', alt: 'Diseño Anime' },
+        { src: '/assets/carousel-4.webp', alt: 'Diseño Peace' },
+        { src: '/assets/carousel-5.webp', alt: 'Diseño CR7' },
+        { src: '/assets/carousel-6.webp', alt: 'Diseño Geisha' },
+        { src: '/assets/carousel-7.webp', alt: 'Diseño Urbano Pack' },
+        { src: '/assets/carousel-8.webp', alt: 'Diseño Cyberpunk' }
+      ];
+
+      let offset = 0;
+      const track = document.getElementById('carousel-track');
+
+      function renderSlides() {
+        if (!track) return;
+        track.innerHTML = '';
+        const count = window.innerWidth >= 640 ? 3 : 2;
+        for (let i = 0; i < count; i++) {
+          const item = slides[(offset + i) % slides.length];
+          const div = document.createElement('div');
+          div.className = "bg-black rounded-2xl overflow-hidden shadow-xl border border-slate-800 aspect-square flex items-center justify-center transition-all duration-500 hover:scale-105";
+          div.innerHTML = `<img src="${item.src}" alt="${item.alt}" class="w-full h-full object-contain p-2" loading="lazy" />`;
+          track.appendChild(div);
+        }
+      }
+
+      renderSlides();
+      window.addEventListener('resize', renderSlides);
+      setInterval(() => {
+        offset = (offset + 1) % slides.length;
+        renderSlides();
+      }, 2800);
+    })();
+
+    // 3. Product Categories & Scroll-Triggered Counters
+    (function initCategories() {
+      const categories = [
+        { title: "Diseños para Camisetas", target: 25000, desc: "Son más de 24.000 archivos seleccionados para estampar CAMISETAS.", img: "/assets/box-camisetas.webp" },
+        { title: "Diseños para Tazas", target: 16200, desc: "Son casi 15.000 archivos seleccionados para estampar TAZAS Y MUGS.", img: "/assets/box-tazas.webp" },
+        { title: "Diseños para Cuadros", target: 5600, desc: "Son más de 5.000 archivos seleccionados para estampar CUADROS o PLACAS DECORATIVAS.", img: "/assets/box-cuadros.webp" },
+        { title: "Diseños para Cojines", target: 2500, desc: "Son más de 2.100 archivos seleccionados para estampar COJINES.", img: "/assets/box-cojines.webp" },
+        { title: "Diseños para Mascarillas", target: 1200, desc: "Son más de 1.200 archivos seleccionados para estampar MASCARILLAS.", img: "/assets/box-mascarillas.webp" },
+        { title: "Diseños para Sandalias y Chanclas", target: 1600, desc: "Son cerca de 1.400 archivos seleccionados para estampar CHANCLAS Y SANDALIAS.", img: "/assets/box-sandalias.webp" },
+        { title: "Diseños para Paneles de Fiestas", target: 10200, desc: "Son más de 10.200 archivos seleccionados para estampar PANELES DE FIESTAS INFANTILES.", img: "/assets/box-paneles.webp" },
+        { title: "Diseños para Redes Sociales", target: 2000, desc: "Pondremos a tu disposición un KIT de artes profesionales para REDES SOCIALES.", img: "/assets/box-redes.webp" },
+        { title: "Moldes y Patrones para Ropa", target: 820, desc: "También está disponible para ti más de 720 MOLDES Y MODELOS de ropa: camisetas, baby look, batas, pantalones, bermudas, poleras y más.", img: "/assets/box-moldes.webp" },
+        { title: "Fuentes Profesionales", target: 2000, desc: "Son más de 20.000 FUENTES PROFESIONALES para descarga inmediata.", img: "/assets/box-fuentes.webp" },
+        { title: "Presets de Fotografía", target: 50000, desc: "Son cerca de 50.000 PRESETS profesionales para fotografías.", img: "/assets/box-presets.webp" },
+        { title: "Logotipos Editables", target: 60000, desc: "Son más de 60.000 LOGOTIPOS profesionales editables.", img: "/assets/box-logotipos.webp" }
+      ];
+
+      const container = document.getElementById('categories-grid');
+      if (!container) return;
+
+      categories.forEach((cat, idx) => {
+        const card = document.createElement('div');
+        card.className = "bg-white rounded-3xl overflow-hidden border border-pink-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group";
+        card.innerHTML = `
+          <div class="h-64 bg-slate-50/60 flex items-center justify-center p-4">
+            <img src="${cat.img}" alt="${cat.title}" class="max-h-full max-w-full object-contain filter drop-shadow-md group-hover:scale-105 transition-all duration-300" loading="lazy" />
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="mb-2.5">
+                <span class="text-2xl sm:text-3xl font-black text-[#FF5500] tracking-tight tabular-nums block counter-number" data-target="${cat.target}">+ 0</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-black text-slate-900 tracking-tight mb-2">${cat.title}</h3>
+              <p class="text-slate-600 text-sm sm:text-[15px] leading-relaxed">${cat.desc}</p>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      // Observer to animate counters
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const numEl = entry.target.querySelector('.counter-number');
+            if (numEl && !numEl.dataset.animated) {
+              numEl.dataset.animated = "true";
+              const target = parseInt(numEl.dataset.target, 10);
+              const duration = 1200;
+              const start = performance.now();
+              function step(now) {
+                const elapsed = now - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const ease = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(ease * target);
+                numEl.textContent = `+ ${current.toLocaleString('es-ES')}`;
+                if (progress < 1) requestAnimationFrame(step);
+                else numEl.textContent = `+ ${target.toLocaleString('es-ES')}`;
+              }
+              requestAnimationFrame(step);
+            }
+          }
+        });
+      }, { threshold: 0.15 });
+
+      container.querySelectorAll('.group').forEach(c => observer.observe(c));
+    })();
+
+    // 4. Themes Cloud & Live Search
+    (function initThemes() {
+      const themes = [
+        "Amistad", "Anime/Geek", "Animados", "Cumpleaños", "Año Nuevo", "Abuelos", "Arte 3D", "Bodas", 
+        "Cactus", "Café", "Matrimonio", "Cristianismo/Gospel", "Mundial de Fútbol", "Selecciones Latinoamericanas", 
+        "Campo/Country", "Día de la Mujer", "Día de la Madre", "Día del Padre", "Padrinos", "Familia", 
+        "Femenino", "Día de Muertos", "Fiestas Patrias", "Quinceañera", "Virgen de Guadalupe/Santoral", 
+        "Películas/Series", "Fitness", "Gamer", "Girasol", "Halloween", "Homenajes", "Humor", 
+        "Iniciales/Monogramas", "Marvel", "San Valentín", "Navidad", "Pascua", "Mascotas", 
+        "Profesiones", "Rock", "Signos del Zodíaco", "Vintage", "y mucho más..."
+      ];
+
+      const container = document.getElementById('themes-tags-container');
+      const input = document.getElementById('theme-search-input');
+      if (!container || !input) return;
+
+      function render(filter = '') {
+        container.innerHTML = '';
+        const list = themes.filter(t => t.toLowerCase().includes(filter.toLowerCase()));
+        if (list.length === 0) {
+          container.innerHTML = `<div class="py-4 text-slate-500 text-sm">No encontramos temas con "${filter}".</div>`;
+          return;
+        }
+        list.forEach((t, idx) => {
+          const span = document.createElement('span');
+          const isHigh = idx % 5 === 0;
+          span.className = `inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-xs ${
+            isHigh ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white' : 'bg-slate-100 text-slate-800 border border-slate-200 hover:bg-pink-50'
+          }`;
+          span.textContent = `✓ ${t}`;
+          container.appendChild(span);
+        });
+      }
+
+      render();
+      input.addEventListener('input', (e) => render(e.target.value));
+    })();
+
+    // 5. Interactive Comparison Sliders (Mouse & Touch)
+    function setupSlider(sliderId) {
+      const slider = document.getElementById(sliderId);
+      if (!slider) return;
+      const clip = slider.querySelector('.slider-clip');
+      const divider = slider.querySelector('.slider-divider');
+      let isDragging = false;
+
+      function updatePosition(clientX) {
+        const rect = slider.getBoundingClientRect();
+        const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
+        const percent = (x / rect.width) * 100;
+        clip.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+        divider.style.left = `${percent}%`;
+      }
+
+      slider.addEventListener('pointerdown', (e) => {
+        isDragging = true;
+        slider.setPointerCapture(e.pointerId);
+        updatePosition(e.clientX);
+      });
+
+      slider.addEventListener('pointermove', (e) => {
+        if (!isDragging) return;
+        updatePosition(e.clientX);
+      });
+
+      function stopDrag() { isDragging = false; }
+      slider.addEventListener('pointerup', stopDrag);
+      slider.addEventListener('pointercancel', stopDrag);
+    }
+    setupSlider('slider-1');
+    setupSlider('slider-2');
+
+    // 6. WhatsApp Testimonial Cards
+    (function initWhatsApp() {
+      const testimonials = [
+        {
+          name: "Felipe",
+          carrier: "Movistar",
+          time: "4:27 PM",
+          battery: "32%",
+          messages: [
+            { text: "¿Qué tal Felipe, disfrutando de la plataforma y los materiales actualizados? ¿Viste que ya subimos artes nuevas este mes?", time: "14:07", sent: true },
+            { text: "¡Hola hermano! ¿Ya hay artes nuevas? Voy a entrar al área de actualizaciones, estoy fascinado con la cantidad de diseños listos en la plataforma, ¡hay muchísimo material jajaja!", time: "14:17", sent: false },
+            { text: "¿Viste? Te lo dije, ¡hay muuuucho material y lo mejor de todo listo para impresión o para editar!", time: "14:26", sent: true }
+          ]
+        },
+        {
+          name: "Camila",
+          carrier: "Claro",
+          time: "9:57 AM",
+          battery: "86%",
+          messages: [
+            { text: "¡Buenos días Camila! ¿Todo bien?", time: "13:01", sent: true },
+            { text: "¿Salió todo bien con tu acceso? ¿Ya empezaste a usar los diseños listos y editables de la plataforma?", time: "13:01", sent: true },
+            { text: "¡Hola! Todo súper bien por aquí. Sí, ya entré a la plataforma y estoy utilizando el material. ¡De verdad que va a ayudar muchísimo a mi trabajo del taller!", time: "13:04", sent: false },
+            { text: "¡Vamos con todo! Siempre traeremos novedades en la carpeta de actualizaciones, revísala mensualmente ¿vale?", time: "13:11", sent: true }
+          ]
+        },
+        {
+          name: "Silvana",
+          carrier: "Personal",
+          time: "11:37 AM",
+          battery: "63%",
+          messages: [
+            { text: "¡Hola Silvana! ¿Todo bien? En cuanto puedas pásame tus comentarios sobre qué te pareció el material de la plataforma, ¿sí?", time: "10:45", sent: true },
+            { text: "¡Estoy amannnnndo los diseños! Todo súper organizado y el catálogo es gigantesco, ¡realmente valió muchísimo la pena!", time: "10:47", sent: false },
+            { text: "¡Geniaaaal! Recuerda estar atenta a la carpeta de actualizaciones para recibir los diseños nuevos cada mes, ¿ok?", time: "10:51", sent: true },
+            { text: "¡Todo listo! Muchísimas gracias 🙌", time: "11:01", sent: false }
+          ]
+        }
+      ];
+
+      const container = document.getElementById('whatsapp-testimonials-grid');
+      if (!container) return;
+
+      testimonials.forEach(t => {
+        const card = document.createElement('div');
+        card.className = "w-full max-w-sm mx-auto bg-[#efeae2] rounded-[2.2rem] overflow-hidden shadow-2xl border-4 border-slate-800 flex flex-col justify-between select-none";
+        card.style.minHeight = "520px";
+        
+        let msgHtml = t.messages.map(m => `
+          <div class="flex w-full ${m.sent ? 'justify-end' : 'justify-start'}">
+            <div class="max-w-[84%] rounded-xl px-3 py-2 text-xs relative shadow-sm ${m.sent ? 'bg-[#dcf8c6] border border-[#cbebb2]' : 'bg-white border border-slate-200'}">
+              <p class="text-[12.5px] leading-snug">${m.text}</p>
+              <div class="flex items-center gap-1 mt-1 text-[9.5px] text-slate-500 justify-end">
+                <span>${m.time}</span>
+                ${m.sent ? '<span class="text-[#34B7F1] font-bold">✓✓</span>' : ''}
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+        card.innerHTML = `
+          <div class="bg-[#f6f6f6] px-5 pt-3 pb-1 flex items-center justify-between text-[11px] font-semibold text-slate-800 border-b border-slate-200">
+            <span>${t.carrier}</span>
+            <span>${t.time}</span>
+            <span>${t.battery}</span>
+          </div>
+          <div class="bg-[#f6f6f6] px-3.5 py-2 flex items-center justify-between border-b border-slate-200 shadow-xs">
+            <span class="text-[#007AFF] text-xs font-semibold">‹ Chats</span>
+            <div class="text-center">
+              <span class="font-bold text-sm text-slate-900 block">${t.name}</span>
+              <span class="text-[10px] text-slate-500">en línea</span>
+            </div>
+            <div class="w-7 h-7 rounded-full bg-slate-300 flex items-center justify-center text-xs">👤</div>
+          </div>
+          <div class="flex-1 p-3.5 space-y-3 flex flex-col justify-start">
+            ${msgHtml}
+          </div>
+          <div class="bg-[#f6f6f6] px-3 py-2 flex items-center gap-2 border-t border-slate-200 text-xs text-slate-400">
+            <span class="text-[#007AFF] font-bold text-base">+</span>
+            <div class="flex-1 bg-white rounded-full px-3 py-1 border border-slate-300">Mensaje</div>
+            <span class="text-[#007AFF]">🎤</span>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    })();
+
+    // 7. FAQ Accordion
+    (function initFaq() {
+      const faqs = [
+        {
+          q: "¿Cómo tendré acceso a los archivos?",
+          a: "Al adquirir tu KIT ESTAMPADOS, tendrás acceso a nuestra plataforma vinculada a Hotmart, con usuario y contraseña que te garantizan acceso vitalicio a los materiales."
+        },
+        {
+          q: "¿Cómo funcionan las actualizaciones?",
+          a: "Cada inicio de mes publicamos contenido nuevo en la subcarpeta \"actualizaciones\" dentro de cada carpeta de archivos."
+        },
+        {
+          q: "Soy principiante, ¿voy a saber usarlo? ¿Es un curso?",
+          a: "Tranquilo/a. La plataforma está dividida en módulos para facilitar tu navegación. Incluye e-book explicativo, videoclases enseñando a estampar en la práctica y miles de archivos en alta calidad listos para usar."
+        },
+        {
+          q: "¿Por cuánto tiempo tendré acceso?",
+          a: "Tu acceso es vitalicio. Pagas una sola vez, recibes tu usuario y contraseña, y puedes entrar a la plataforma desde donde estés, las veces que quieras, para siempre."
+        }
+      ];
+
+      const list = document.getElementById('faq-list');
+      if (!list) return;
+
+      faqs.forEach((item, idx) => {
+        const itemDiv = document.createElement('div');
+        const isOpen = idx === 0;
+        itemDiv.className = `rounded-2xl border transition-all duration-200 overflow-hidden ${isOpen ? 'border-pink-300 bg-pink-50/30' : 'border-slate-200 bg-white'}`;
+        
+        itemDiv.innerHTML = `
+          <button type="button" class="w-full py-4 sm:py-5 px-5 sm:px-6 text-left flex items-center justify-between gap-4 font-black text-base sm:text-lg text-slate-900 cursor-pointer">
+            <span>${item.q}</span>
+            <span class="faq-icon text-xl transition-transform ${isOpen ? 'rotate-180' : ''}">▼</span>
+          </button>
+          <div class="faq-content px-5 sm:px-6 pb-5 sm:pb-6 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-pink-100 pt-3 ${isOpen ? '' : 'hidden'}">
+            ${item.a}
+          </div>
+        `;
+
+        const btn = itemDiv.querySelector('button');
+        const content = itemDiv.querySelector('.faq-content');
+        const icon = itemDiv.querySelector('.faq-icon');
+
+        btn.addEventListener('click', () => {
+          const currentlyOpen = !content.classList.contains('hidden');
+          if (currentlyOpen) {
+            content.classList.add('hidden');
+            icon.classList.remove('rotate-180');
+            itemDiv.className = "rounded-2xl border transition-all duration-200 overflow-hidden border-slate-200 bg-white";
+          } else {
+            content.classList.remove('hidden');
+            icon.classList.add('rotate-180');
+            itemDiv.className = "rounded-2xl border transition-all duration-200 overflow-hidden border-pink-300 bg-pink-50/30";
+          }
+        });
+
+        list.appendChild(itemDiv);
+      });
+    })();
+  </script>
+</body>
+</html>
