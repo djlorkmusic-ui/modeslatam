@@ -6,10 +6,28 @@
   <title>Kit Estampados - +850 Mil Diseños para Sublimación, DTG y DTF</title>
   <meta name="description" content="Catálogo completo con más de 850 mil diseños listos y editables para sublimación, DTG y DTF con actualizaciones semanales." />
   
-  <!-- Fonts -->
+  <!-- Preconnect & DNS Prefetch for maximum network performance -->
+  <link rel="dns-prefetch" href="//connect.facebook.net">
+  <link rel="dns-prefetch" href="//pay.hotmart.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="/assets/hero-mockup.webp" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Meta Pixel Code (ID: 422359136076680) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '422359136076680');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -47,9 +65,19 @@
       touch-action: none;
       user-select: none;
     }
+    .content-auto {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 600px;
+    }
   </style>
 </head>
 <body class="selection:bg-pink-500 selection:text-white flex flex-col min-h-screen">
+  <!-- Meta Pixel Noscript (ID: 422359136076680) -->
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=422359136076680&ev=PageView&noscript=1"
+    />
+  </noscript>
 
   <!-- 1. TOP URGENCY BAR -->
   <aside id="urgency-top-bar" class="bg-gradient-to-r from-rose-600 via-pink-600 to-amber-500 text-white py-2 sm:py-2.5 px-3 sm:px-4 shadow-md sticky top-0 z-50">
@@ -86,21 +114,24 @@
 
           <!-- Right Column: Mockup + CTA -->
           <div class="lg:col-span-6 relative flex flex-col items-center">
-            <div className="relative mx-auto max-w-md lg:max-w-none w-full p-2 sm:p-4">
+            <div class="relative mx-auto max-w-md lg:max-w-none w-full p-2 sm:p-4">
               <img
                 src="/assets/hero-mockup.webp"
                 alt="Mockup oficial de diseños Kit Estamparia"
+                fetchpriority="high"
+                decoding="async"
                 class="w-full max-w-lg lg:max-w-xl mx-auto object-contain drop-shadow-2xl hover:scale-[1.02] transition-transform duration-500"
               />
             </div>
             <div class="w-full mt-2 sm:mt-4 flex flex-col items-center">
-              <button
-                onclick="scrollToOffer()"
+              <a
+                href="https://pay.hotmart.com/K107552904L?bid=1789171693846"
+                data-hotmart-checkout="true"
                 class="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-5 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-base sm:text-lg lg:text-xl rounded-2xl shadow-xl shadow-amber-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 border-b-4 border-amber-600 cursor-pointer animate-pulse-cta text-center"
               >
                 <span>¡SÍ! Quiero acceder a todos los diseños ahora mismo</span>
                 <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-              </button>
+              </a>
             </div>
           </div>
 
@@ -186,7 +217,7 @@
     </section>
 
     <!-- 6. +100 THEMES CLOUD WITH SEARCH -->
-    <section id="themes-cloud-section" class="py-14 sm:py-20 bg-white border-b border-pink-100 text-center">
+    <section id="themes-cloud-section" class="py-14 sm:py-20 bg-white border-b border-pink-100 text-center content-auto">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight uppercase mb-6">
           +100 TEMAS INCLUIDOS
@@ -227,9 +258,9 @@
           <!-- Slider 1: Floral Cross -->
           <div class="flex flex-col items-center">
             <div class="slider-container relative aspect-square w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 bg-white cursor-ew-resize select-none" id="slider-1">
-              <img src="/assets/slider-cross-mockup.webp" alt="Camiseta física estampada con el diseño" class="w-full h-full object-cover pointer-events-none select-none" />
+              <img src="/assets/slider-cross-mockup.webp" alt="Camiseta física estampada con el diseño" loading="lazy" decoding="async" class="w-full h-full object-cover pointer-events-none select-none" />
               <div class="slider-clip absolute inset-0 pointer-events-none select-none" style="clip-path: inset(0 50% 0 0);">
-                <img src="/assets/slider-cross-art.webp" alt="Arte digital cruz floral" class="w-full h-full object-cover bg-white pointer-events-none select-none" />
+                <img src="/assets/slider-cross-art.webp" alt="Arte digital cruz floral" loading="lazy" decoding="async" class="w-full h-full object-cover bg-white pointer-events-none select-none" />
               </div>
               <div class="slider-divider absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] pointer-events-none" style="left: 50%;">
                 <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white text-slate-900 shadow-2xl border-2 border-white flex items-center justify-center font-bold">
@@ -251,9 +282,9 @@
           <!-- Slider 2: Naruto -->
           <div class="flex flex-col items-center">
             <div class="slider-container relative aspect-square w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 bg-white cursor-ew-resize select-none" id="slider-2">
-              <img src="/assets/slider-naruto-mockup.webp" alt="Camiseta física Naruto estampada" class="w-full h-full object-cover pointer-events-none select-none" />
+              <img src="/assets/slider-naruto-mockup.webp" alt="Camiseta física Naruto estampada" loading="lazy" decoding="async" class="w-full h-full object-cover pointer-events-none select-none" />
               <div class="slider-clip absolute inset-0 pointer-events-none select-none" style="clip-path: inset(0 50% 0 0);">
-                <img src="/assets/slider-naruto-art.webp" alt="Arte digital Naruto anime" class="w-full h-full object-cover bg-white pointer-events-none select-none" />
+                <img src="/assets/slider-naruto-art.webp" alt="Arte digital Naruto anime" loading="lazy" decoding="async" class="w-full h-full object-cover bg-white pointer-events-none select-none" />
               </div>
               <div class="slider-divider absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] pointer-events-none" style="left: 50%;">
                 <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white text-slate-900 shadow-2xl border-2 border-white flex items-center justify-center font-bold">
@@ -278,16 +309,16 @@
         <div class="mb-12 sm:mb-14">
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4" id="gallery-grid">
             <!-- 10 photos populated via HTML -->
-            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-1.webp" alt="Taza estampada" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
-            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-2.webp" alt="Camiseta física" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
-            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-3.webp" alt="Cojín estampado" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
-            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-4.webp" alt="Cuadro decorativo" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
-            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-5.webp" alt="Chanclas estampadas" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
-            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-6.webp" alt="Gorra bordada" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
-            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-7.webp" alt="Panel de fiesta infantil" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
-            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-8.webp" alt="Mug mágico" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
-            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-9.webp" alt="Sudadera urbana" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
-            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-10.webp" alt="Bolsa ecológica tote" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-1.webp" alt="Taza estampada" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-2.webp" alt="Camiseta física" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-3.webp" alt="Cojín estampado" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-4.webp" alt="Cuadro decorativo" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-5.webp" alt="Chanclas estampadas" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-6.webp" alt="Gorra bordada" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-7.webp" alt="Panel de fiesta infantil" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-8.webp" alt="Mug mágico" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-9.webp" alt="Sudadera urbana" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all"><img src="/assets/gallery-10.webp" alt="Bolsa ecológica tote" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-105 transition-transform" /></div>
           </div>
         </div>
 
@@ -357,10 +388,10 @@
 
         <!-- Video showcase -->
         <div class="my-7 max-w-xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30 bg-slate-950/40 p-2">
-          <video autoPlay loop muted playsInline preload="metadata" poster="/assets/giftpacotert_poster.webp" class="w-full h-auto rounded-xl object-contain mx-auto">
+          <video autoPlay loop muted playsInline preload="none" poster="/assets/giftpacotert_poster.webp" class="w-full h-auto rounded-xl object-contain mx-auto">
             <source src="/assets/giftpacotert_fast.webm" type="video/webm" />
             <source src="/assets/giftpacotert_fast.mp4" type="video/mp4" />
-            <img src="/assets/giftpacotert.webp" alt="Pack showcase" class="w-full h-auto rounded-xl object-contain mx-auto" />
+            <img src="/assets/giftpacotert.webp" alt="Pack showcase" loading="lazy" decoding="async" class="w-full h-auto rounded-xl object-contain mx-auto" />
           </video>
         </div>
 
@@ -369,13 +400,14 @@
         </p>
 
         <div class="flex flex-col items-center">
-          <button
-            onclick="scrollToOffer()"
+          <a
+            href="https://pay.hotmart.com/K107552904L?bid=1789171693846"
+            data-hotmart-checkout="true"
             class="w-full sm:w-auto px-8 py-4 sm:py-5 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-lg sm:text-xl rounded-2xl shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-3 border-b-4 border-amber-600 cursor-pointer animate-pulse-cta"
           >
             <span>¡SÍ! Quiero acceder a todos los diseños ahora mismo</span>
             <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-          </button>
+          </a>
           <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-amber-100 mt-4">
             <span>🛡️ Compra 100% segura • Acceso instantáneo • 7 días de garantía</span>
           </div>
@@ -410,29 +442,65 @@
             <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +60.000 Logotipos Editables</span><span class="font-bold text-slate-500 font-mono">$9</span></div>
           </div>
 
-          <div class="bg-gradient-to-b from-amber-50/50 to-pink-50/80 p-6 sm:p-10 border-t-2 border-dashed border-pink-200 text-center">
-            <h3 class="text-2xl sm:text-3xl md:text-4xl font-black text-rose-600 tracking-tight uppercase mb-4">
-              SOLO 3 CUPOS CON 90% DE DESCUENTO
+          <div class="bg-white p-6 sm:p-10 border-t border-slate-100 text-center flex flex-col items-center">
+            
+            <!-- Badge: Oferta por tiempo limitado -->
+            <div class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200/80 text-amber-700 text-xs sm:text-sm font-semibold mb-3 shadow-xs">
+              <span class="text-amber-500 text-sm">⚡</span>
+              <span>Oferta por tiempo limitado</span>
+            </div>
+
+            <!-- Título Limpio -->
+            <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight text-center max-w-lg leading-tight mb-2">
+              Asegura tu acceso ahora con descuento
             </h3>
-            <div class="mb-6">
-              <div class="inline-block bg-slate-950 text-amber-300 font-black text-2xl sm:text-3xl md:text-4xl px-6 py-3 rounded-2xl shadow-lg border border-amber-400">
-                DE US$197 POR SOLO: US$19
+
+            <!-- Ancoragem Limpa e Despoluída -->
+            <div class="text-center my-3 space-y-0.5">
+              <p class="text-slate-400 text-sm sm:text-base line-through font-medium">De $19 USD</p>
+              <p class="text-slate-500 text-xs sm:text-sm font-semibold uppercase tracking-wider">por solo</p>
+              <div class="text-5xl sm:text-6xl md:text-7xl font-black text-rose-600 tracking-tight my-1">
+                $9 USD
+              </div>
+              <p class="text-slate-500 text-xs sm:text-sm font-medium pt-1">
+                Pago único • Acceso de por vida
+              </p>
+            </div>
+
+            <!-- Bloco Contador Estilo Foto com cores do site -->
+            <div class="inline-flex flex-col items-center bg-slate-50/80 border border-slate-200/70 rounded-2xl px-6 py-3.5 my-4">
+              <span class="text-xs text-slate-500 font-semibold mb-2">Esta oferta expira en:</span>
+              <div class="flex items-center gap-2 font-mono">
+                <div class="w-14 sm:w-16 h-14 sm:h-16 bg-slate-950 text-amber-300 rounded-xl flex items-center justify-center font-black text-2xl sm:text-3xl shadow-sm border border-slate-800">
+                  <span id="offer-timer-minutes">13</span>
+                </div>
+                <span class="font-black text-xl sm:text-2xl text-slate-900">:</span>
+                <div class="w-14 sm:w-16 h-14 sm:h-16 bg-slate-950 text-amber-300 rounded-xl flex items-center justify-center font-black text-2xl sm:text-3xl shadow-sm border border-slate-800">
+                  <span id="offer-timer-seconds">40</span>
+                </div>
               </div>
             </div>
-            <div class="max-w-md mx-auto">
-              <button
-                onclick="openCheckoutModal()"
-                class="w-full py-4 sm:py-5 px-6 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-lg sm:text-xl rounded-2xl shadow-xl shadow-amber-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-3 border-b-4 border-amber-600 cursor-pointer animate-pulse-cta"
+
+            <!-- Botão de Ação Redondo Estilo Foto com cores originais do site -->
+            <div class="w-full max-w-md mx-auto">
+              <a
+                href="https://pay.hotmart.com/K107552904L?bid=1789171693846"
+                data-hotmart-checkout="true"
+                id="main-hotmart-cta"
+                class="w-full py-4 sm:py-5 px-8 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 active:scale-[0.98] text-slate-950 font-black text-lg sm:text-xl rounded-full shadow-xl shadow-amber-500/30 hover:shadow-amber-500/50 border-b-4 border-amber-600 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer text-center group animate-pulse-cta"
               >
-                <span>¡SÍ! Quiero acceder a todos los diseños ahora mismo</span>
-                <svg class="w-6 h-6 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-              </button>
-              <div class="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs font-bold text-slate-600">
-                <span>🔒 Cifrado SSL 256 bits</span>
-                <span>🛡️ Garantía 7 Días</span>
-                <span>💳 Tarjetas, PayPal y Efectivo</span>
+                <span>Quiero asegurar mi acceso</span>
+                <span class="text-xl font-black group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+              <div class="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs font-semibold text-slate-500">
+                <span>🔒 Compra 100% segura</span>
+                <span>•</span>
+                <span>🛡️ Garantía de 7 días</span>
+                <span>•</span>
+                <span>⚡ Acceso inmediato</span>
               </div>
             </div>
+
           </div>
 
         </div>
@@ -441,7 +509,7 @@
     </section>
 
     <!-- 11. WHATSAPP TESTIMONIALS -->
-    <section id="testimonials-section" class="py-16 sm:py-24 bg-gradient-to-b from-white via-amber-50/20 to-white border-b border-pink-100">
+    <section id="testimonials-section" class="py-16 sm:py-24 bg-gradient-to-b from-white via-amber-50/20 to-white border-b border-pink-100 content-auto">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs sm:text-sm font-bold mb-4">
@@ -509,7 +577,7 @@
     </section>
 
     <!-- 14. FAQ ACCORDION -->
-    <section id="faq-section" class="py-14 sm:py-20 bg-white border-b border-pink-100">
+    <section id="faq-section" class="py-14 sm:py-20 bg-white border-b border-pink-100 content-auto">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10 sm:mb-14">
           <span class="bg-pink-100 text-pink-700 text-xs sm:text-sm font-black px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
@@ -570,7 +638,7 @@
             Estás a un paso de acceder a todos los diseños
           </h3>
           <p class="text-sm text-slate-600 mt-1">
-            Acceso vitalicio con 90% de descuento por solo <strong class="text-pink-600 font-bold">US$19</strong>
+            Acceso vitalicio con precio promocional por solo <strong class="text-pink-600 font-bold">US$9</strong>
           </p>
         </div>
 
@@ -587,8 +655,8 @@
             <strong>🔒 Garantía incondicional de satisfacción</strong>
             <p class="text-slate-600 mt-0.5">Acceso vitalicio inmediato a los materiales a través de Hotmart.</p>
           </div>
-          <button type="submit" class="w-full py-4 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 text-slate-950 font-black text-lg rounded-xl shadow-lg border-b-4 border-amber-600 cursor-pointer">
-            COMPLETAR ACCESO POR US$19
+          <button type="submit" class="w-full py-4 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-lg rounded-xl shadow-lg border-b-4 border-amber-600 cursor-pointer">
+            COMPLETAR ACCESO POR US$9
           </button>
         </form>
       </div>
@@ -641,12 +709,27 @@
 
     function handleModalSubmit(e) {
       e.preventDefault();
-      const name = document.getElementById('buyer-name').value;
       const email = document.getElementById('buyer-email').value;
-      document.getElementById('modal-form-view').classList.add('hidden');
-      document.getElementById('modal-success-view').classList.remove('hidden');
-      document.getElementById('success-title').textContent = `¡Felicitaciones, ${name || 'Emprendedor'}!`;
-      document.getElementById('success-email-notice').innerHTML = `Hemos enviado las credenciales de prueba a: <strong class="text-pink-600">${email}</strong>`;
+      const name = document.getElementById('buyer-name').value;
+      
+        let checkoutUrl = 'https://pay.hotmart.com/K107552904L?bid=1789171693846';
+        if (email) {
+          try {
+            const u = new URL(checkoutUrl);
+            u.searchParams.set('email', email);
+            if (name) u.searchParams.set('name', name);
+            checkoutUrl = u.toString();
+          } catch (err) {}
+        }
+
+      if (window.HotmartTracking) {
+        const finalUrl = window.HotmartTracking.triggerCheckout(checkoutUrl);
+        setTimeout(() => {
+          window.location.href = finalUrl;
+        }, 150);
+      } else {
+        window.location.href = checkoutUrl;
+      }
     }
 
     // 1. Top Bar Countdown (14:59 loop)
@@ -657,6 +740,8 @@
       const h2El = document.getElementById('countdown-hours');
       const m2El = document.getElementById('countdown-minutes');
       const s2El = document.getElementById('countdown-seconds');
+      const offerMEl = document.getElementById('offer-timer-minutes');
+      const offerSEl = document.getElementById('offer-timer-seconds');
 
       setInterval(() => {
         if (timeLeft <= 0) timeLeft = 14 * 60 + 59;
@@ -670,6 +755,10 @@
           minEl.textContent = formattedM;
           secEl.textContent = formattedS;
         }
+        if (offerMEl && offerSEl) {
+          offerMEl.textContent = formattedM;
+          offerSEl.textContent = formattedS;
+        }
         if (h2El && m2El && s2El) {
           h2El.textContent = '00';
           m2El.textContent = formattedM;
@@ -678,7 +767,7 @@
       }, 1000);
     })();
 
-    // 2. Carousel Rotation (Benefits section)
+    // 2. Carousel Rotation (Benefits section) - Zero DOM Churn & Hardware Accelerated
     (function initCarousel() {
       const slides = [
         { src: '/assets/carousel-1.webp', alt: 'Diseño Streetwear' },
@@ -693,26 +782,48 @@
 
       let offset = 0;
       const track = document.getElementById('carousel-track');
+      if (!track) return;
 
-      function renderSlides() {
-        if (!track) return;
-        track.innerHTML = '';
-        const count = window.innerWidth >= 640 ? 3 : 2;
-        for (let i = 0; i < count; i++) {
+      track.innerHTML = '';
+      const slots = [];
+      const slotImgs = [];
+      const maxSlots = 3;
+
+      for (let i = 0; i < maxSlots; i++) {
+        const div = document.createElement('div');
+        div.className = `bg-black rounded-2xl overflow-hidden shadow-xl border border-slate-800 aspect-square flex items-center justify-center transition-all duration-500 hover:scale-105 ${i === 2 ? 'hidden sm:flex' : 'flex'}`;
+        const img = document.createElement('img');
+        img.className = "w-full h-full object-contain p-2 transition-opacity duration-300";
+        img.loading = "lazy";
+        img.decoding = "async";
+        const item = slides[i];
+        img.src = item.src;
+        img.alt = item.alt;
+        div.appendChild(img);
+        track.appendChild(div);
+        slots.push(div);
+        slotImgs.push(img);
+      }
+
+      function updateSlideImages() {
+        for (let i = 0; i < maxSlots; i++) {
           const item = slides[(offset + i) % slides.length];
-          const div = document.createElement('div');
-          div.className = "bg-black rounded-2xl overflow-hidden shadow-xl border border-slate-800 aspect-square flex items-center justify-center transition-all duration-500 hover:scale-105";
-          div.innerHTML = `<img src="${item.src}" alt="${item.alt}" class="w-full h-full object-contain p-2" loading="lazy" />`;
-          track.appendChild(div);
+          const img = slotImgs[i];
+          if (img) {
+            img.style.opacity = '0.5';
+            setTimeout(() => {
+              img.src = item.src;
+              img.alt = item.alt;
+              img.style.opacity = '1';
+            }, 150);
+          }
         }
       }
 
-      renderSlides();
-      window.addEventListener('resize', renderSlides);
       setInterval(() => {
         offset = (offset + 1) % slides.length;
-        renderSlides();
-      }, 2800);
+        updateSlideImages();
+      }, 3200);
     })();
 
     // 3. Product Categories & Scroll-Triggered Counters
@@ -740,7 +851,7 @@
         card.className = "bg-white rounded-3xl overflow-hidden border border-pink-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group";
         card.innerHTML = `
           <div class="h-64 bg-slate-50/60 flex items-center justify-center p-4">
-            <img src="${cat.img}" alt="${cat.title}" class="max-h-full max-w-full object-contain filter drop-shadow-md group-hover:scale-105 transition-all duration-300" loading="lazy" />
+            <img src="${cat.img}" alt="${cat.title}" class="max-h-full max-w-full object-contain filter drop-shadow-md group-hover:scale-105 transition-all duration-300" loading="lazy" decoding="async" />
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
@@ -1000,6 +1111,233 @@
 
         list.appendChild(itemDiv);
       });
+    })();
+
+    // ==========================================
+    // SISTEMA DE RASTREIO HOTMART / META / UTMIFY
+    // ==========================================
+    (function initHotmartTracking() {
+      'use strict';
+
+      // Chaves de parâmetros para capturar e persistir
+      const TRACKING_KEYS = [
+        'fbclid',
+        'utm_source',
+        'utm_medium',
+        'utm_campaign',
+        'utm_content',
+        'utm_term',
+        'xcod'
+      ];
+
+      // Função para ler cookies
+      function getCookie(name) {
+        const value = '; ' + document.cookie;
+        const parts = value.split('; ' + name + '=');
+        if (parts.length === 2) return parts.pop().split(';').shift();
+        return null;
+      }
+
+      // Função para salvar cookies com suporte ao domínio raiz
+      function setCookie(name, value, days) {
+        let expires = '';
+        if (days) {
+          const d = new Date();
+          d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = '; expires=' + d.toUTCString();
+        }
+        const hostname = window.location.hostname;
+        const parts = hostname.split('.');
+        let domainStr = '';
+        if (parts.length > 1 && !hostname.includes('localhost') && !/^\d+\.\d+\.\d+\.\d+$/.test(hostname)) {
+          const rootDomain = parts.slice(-2).join('.');
+          domainStr = '; domain=.' + rootDomain;
+        }
+        document.cookie = name + '=' + encodeURIComponent(value || '') + expires + '; path=/' + domainStr + '; SameSite=Lax';
+      }
+
+      // 1. CAPTURA DE PARÂMETROS E PERSISTÊNCIA EM SESSIONSTORAGE (E LOCALSTORAGE)
+      const urlParams = new URLSearchParams(window.location.search);
+      const activeParams = {};
+
+      TRACKING_KEYS.forEach(key => {
+        const val = urlParams.get(key);
+        if (val) {
+          sessionStorage.setItem(key, val);
+          try { localStorage.setItem(key, val); } catch (e) {}
+          activeParams[key] = val;
+        } else {
+          const stored = sessionStorage.getItem(key) || (function() {
+            try { return localStorage.getItem(key); } catch(e) { return null; }
+          })();
+          if (stored) activeParams[key] = stored;
+        }
+      });
+
+      // 2. CRIAÇÃO DO _fbc SE EXISTIR fbclid NA URL
+      const currentFbclid = activeParams.fbclid || urlParams.get('fbclid');
+      if (currentFbclid) {
+        const existingFbc = getCookie('_fbc');
+        if (!existingFbc) {
+          const timestamp = Date.now();
+          const fbcValue = 'fb.1.' + timestamp + '.' + currentFbclid;
+          setCookie('_fbc', fbcValue, 90);
+        }
+      }
+
+      // Geração do parâmetro sck combinando _fbp e _fbc (ex: sck=fbp:123|fbc:456)
+      function getSckValue() {
+        const fbp = getCookie('_fbp');
+        let fbc = getCookie('_fbc');
+        if (!fbc && currentFbclid) {
+          fbc = 'fb.1.' + Date.now() + '.' + currentFbclid;
+        }
+        const sckParts = [];
+        if (fbp) sckParts.push('fbp:' + decodeURIComponent(fbp));
+        if (fbc) sckParts.push('fbc:' + decodeURIComponent(fbc));
+        return sckParts.length > 0 ? sckParts.join('|') : null;
+      }
+
+      // 3. DECORAÇÃO DE LINKS DA HOTMART
+      function decorateHotmartUrl(rawUrl) {
+        if (!rawUrl) return rawUrl;
+        try {
+          const url = new URL(rawUrl, window.location.origin);
+          if (!url.hostname.includes('hotmart.com')) return rawUrl;
+
+          // Adicionar UTMs e xcod guardados
+          TRACKING_KEYS.forEach(key => {
+            const val = sessionStorage.getItem(key) || (function() {
+              try { return localStorage.getItem(key); } catch(e) { return null; }
+            })();
+            if (val && !url.searchParams.has(key)) {
+              url.searchParams.set(key, val);
+            }
+          });
+
+          // Adicionar sck
+          const sck = getSckValue();
+          if (sck && !url.searchParams.has('sck')) {
+            url.searchParams.set('sck', sck);
+          }
+
+          return url.toString();
+        } catch (err) {
+          console.warn('Erro ao formatar link da Hotmart:', err);
+          return rawUrl;
+        }
+      }
+
+      // Decorar todos os elementos na página
+      function decorateAllLinks() {
+        const links = document.querySelectorAll('a[href*="hotmart.com"], [data-hotmart-checkout], button[data-hotmart-url]');
+        links.forEach(el => {
+          if (el.tagName === 'A') {
+            const current = el.getAttribute('href');
+            if (current && current.includes('hotmart.com')) {
+              const decorated = decorateHotmartUrl(current);
+              if (decorated !== current) {
+                el.setAttribute('href', decorated);
+              }
+            }
+          }
+        });
+      }
+
+      // Executar na inicialização
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', decorateAllLinks);
+      } else {
+        decorateAllLinks();
+      }
+
+      // 5. MUTATIONOBSERVER OTIMIZADO PARA ELEMENTOS CARREGADOS DINAMICAMENTE
+      let observerDebounce = null;
+      const observer = new MutationObserver(mutations => {
+        let hasNew = false;
+        for (const m of mutations) {
+          if (m.addedNodes.length > 0) {
+            hasNew = true;
+            break;
+          }
+        }
+        if (hasNew) {
+          if (observerDebounce) clearTimeout(observerDebounce);
+          observerDebounce = setTimeout(decorateAllLinks, 150);
+        }
+      });
+
+      if (document.body) {
+        observer.observe(document.body, { childList: true, subtree: true });
+      } else {
+        document.addEventListener('DOMContentLoaded', () => {
+          observer.observe(document.body, { childList: true, subtree: true });
+        });
+      }
+
+      // 4 & 6. EVENTO InitiateCheckout COM EVENTID ÚNICO E UTMIFY TRACK
+      function handleCheckoutAction(targetUrl) {
+        // Gerar eventID único para deduplicação da API de Conversões
+        const eventID = 'ic_' + Date.now() + '_' + Math.random().toString(36).substring(2, 9);
+
+        // Disparo do Meta Pixel (ID: 422359136076680)
+        if (typeof window.fbq === 'function') {
+          try {
+            window.fbq('track', 'InitiateCheckout', {
+              content_name: 'Kit Estampados - +850 Mil Diseños',
+              currency: 'USD',
+              value: 9.00
+            }, { eventID: eventID });
+            console.log('[Tracking] Meta InitiateCheckout disparado:', eventID);
+          } catch (e) {
+            console.warn('Erro ao disparar fbq InitiateCheckout:', e);
+          }
+        }
+
+        // Integração Utmify: window.utmify.track('initiate_checkout')
+        if (window.utmify && typeof window.utmify.track === 'function') {
+          try {
+            window.utmify.track('initiate_checkout');
+            console.log('[Tracking] Utmify initiate_checkout disparado');
+          } catch (e) {
+            console.warn('Erro ao disparar Utmify initiate_checkout:', e);
+          }
+        }
+
+        return decorateHotmartUrl(targetUrl);
+      }
+
+      // Interceptar cliques em links/botões da Hotmart
+      document.addEventListener('click', function(e) {
+        const trigger = e.target.closest('a[href*="hotmart.com"], [data-hotmart-checkout], button[data-hotmart-url]');
+        if (!trigger) return;
+
+        let rawUrl = '';
+        if (trigger.tagName === 'A') {
+          rawUrl = trigger.getAttribute('href');
+        } else if (trigger.dataset.hotmartUrl) {
+          rawUrl = trigger.dataset.hotmartUrl;
+        } else {
+          rawUrl = 'https://pay.hotmart.com/K107552904L?bid=1789171693846';
+        }
+
+        const finalUrl = handleCheckoutAction(rawUrl);
+
+        if (trigger.tagName === 'A') {
+          e.preventDefault();
+          setTimeout(() => {
+            window.location.href = finalUrl;
+          }, 150);
+        }
+      }, true);
+
+      // Expor no escopo global para uso no modal ou scripts externos
+      window.HotmartTracking = {
+        triggerCheckout: handleCheckoutAction,
+        decorateUrl: decorateHotmartUrl,
+        getSck: getSckValue,
+        getParams: () => ({ ...activeParams })
+      };
     })();
   </script>
 </body>
