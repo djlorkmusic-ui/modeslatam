@@ -401,7 +401,7 @@
 
         <div class="flex flex-col items-center">
           <a
-            href="https://pay.hotmart.com/K107552904L?bid=1789171693846"
+            href="https://pay.hotmart.com/K107552904L?checkoutMode=10"
             data-hotmart-checkout="true"
             class="w-full sm:w-auto px-8 py-4 sm:py-5 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-lg sm:text-xl rounded-2xl shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-3 border-b-4 border-amber-600 cursor-pointer animate-pulse-cta"
           >
@@ -484,7 +484,7 @@
             <!-- Botão de Ação Redondo Estilo Foto com cores originais do site -->
             <div class="w-full max-w-md mx-auto">
               <a
-                href="https://pay.hotmart.com/K107552904L?bid=1789171693846"
+                href="https://pay.hotmart.com/K107552904L?checkoutMode=10"
                 data-hotmart-checkout="true"
                 id="main-hotmart-cta"
                 class="w-full py-4 sm:py-5 px-8 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 active:scale-[0.98] text-slate-950 font-black text-lg sm:text-xl rounded-full shadow-xl shadow-amber-500/30 hover:shadow-amber-500/50 border-b-4 border-amber-600 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer text-center group animate-pulse-cta"
@@ -720,7 +720,7 @@
       const email = document.getElementById('buyer-email').value;
       const name = document.getElementById('buyer-name').value;
       
-        let checkoutUrl = 'https://pay.hotmart.com/K107552904L?bid=1789171693846';
+        let checkoutUrl = 'https://pay.hotmart.com/K107552904L?checkoutMode=10';
         if (email) {
           try {
             const u = new URL(checkoutUrl);
@@ -1326,7 +1326,7 @@
         } else if (trigger.dataset.hotmartUrl) {
           rawUrl = trigger.dataset.hotmartUrl;
         } else {
-          rawUrl = 'https://pay.hotmart.com/K107552904L?bid=1789171693846';
+          rawUrl = 'https://pay.hotmart.com/K107552904L?checkoutMode=10';
         }
 
         const finalUrl = handleCheckoutAction(rawUrl);
