@@ -124,14 +124,14 @@
               />
             </div>
             <div class="w-full mt-2 sm:mt-4 flex flex-col items-center">
-              <a
-                href="https://pay.hotmart.com/K107552904L?bid=1789171693846"
-                data-hotmart-checkout="true"
+              <button
+                type="button"
+                onclick="scrollToCountdown()"
                 class="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-5 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-base sm:text-lg lg:text-xl rounded-2xl shadow-xl shadow-amber-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 border-b-4 border-amber-600 cursor-pointer animate-pulse-cta text-center"
               >
                 <span>¡SÍ! Quiero acceder a todos los diseños ahora mismo</span>
                 <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-              </a>
+              </button>
             </div>
           </div>
 
@@ -684,6 +684,14 @@
 
   <!-- EMBEDDED JAVASCRIPT LOGIC -->
   <script>
+    // Smooth scroll to "Tu cupo con 90% OFF expira en:"
+    function scrollToCountdown() {
+      const section = document.getElementById('second-countdown-cta');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
     // Smooth scroll to offer
     function scrollToOffer() {
       const section = document.getElementById('value-stack-section');
