@@ -83,7 +83,7 @@
   <aside id="urgency-top-bar" class="bg-gradient-to-r from-rose-600 via-pink-600 to-amber-500 text-white py-2 sm:py-2.5 px-3 sm:px-4 shadow-md sticky top-0 z-50">
     <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center gap-1.5">
       <div class="flex items-center justify-center gap-1.5 font-black text-xs sm:text-sm tracking-wide text-white">
-        <span>🔥 ¡ATENCIÓN! La oferta con el precio promocional termina en:</span>
+        <span>⚡ Atención: La oferta promocional con 90% OFF termina en:</span>
       </div>
       <div class="inline-flex items-center gap-1.5 bg-black/35 px-3 py-1 rounded-lg border border-white/25">
         <div class="flex items-center font-mono font-black text-sm sm:text-base tracking-widest text-white">
@@ -124,14 +124,15 @@
               />
             </div>
             <div class="w-full mt-2 sm:mt-4 flex flex-col items-center">
-              <button
-                type="button"
-                onclick="scrollToCountdown()"
+              <a
+                href="https://pay.hotmart.com/K107552904L?checkoutMode=10"
+                data-hotmart-checkout="true"
+                id="hero-checkout-cta"
                 class="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-5 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-base sm:text-lg lg:text-xl rounded-2xl shadow-xl shadow-amber-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 border-b-4 border-amber-600 cursor-pointer animate-pulse-cta text-center"
               >
                 <span>¡SÍ! Quiero acceder a todos los diseños ahora mismo</span>
                 <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-              </button>
+              </a>
             </div>
           </div>
 
@@ -139,22 +140,18 @@
       </div>
     </header>
 
-    <!-- 3. SCARCITY BLOCK -->
+    <!-- 3. PROMOTIONAL DISCOUNT URGENCY BANNER -->
     <section id="scarcity-block" class="bg-slate-950 text-white py-6 sm:py-8 px-4 border-y-4 border-amber-400 text-center relative">
       <div class="max-w-4xl mx-auto relative z-10">
-        <div class="inline-flex items-center gap-2 bg-rose-600/30 border border-rose-500/50 text-rose-300 px-3 py-1 rounded-full text-xs sm:text-sm font-black mb-3 uppercase tracking-wider">
-          <span>⚠️ ¡OFERTA LIMITADA!</span>
+        <div class="inline-flex items-center gap-2 bg-amber-400/20 border border-amber-400/40 text-amber-300 px-3.5 py-1 rounded-full text-xs sm:text-sm font-bold mb-3 uppercase tracking-wider">
+          <span>⚡ Promoción Exclusiva por Tiempo Limitado</span>
         </div>
-        <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-amber-300 tracking-tight uppercase mb-4">
-          SOLO 3 CUPOS DISPONIBLES
+        <h2 class="text-xl sm:text-2xl md:text-4xl font-black text-amber-300 tracking-tight uppercase mb-2">
+          90% de Descuento Inmediato
         </h2>
-        <div class="max-w-md mx-auto bg-slate-800/90 rounded-full p-1 border border-slate-700 shadow-inner">
-          <div class="relative flex items-center justify-between px-3 py-1.5">
-            <div class="absolute left-0 top-0 bottom-0 bg-gradient-to-r from-pink-600 via-rose-500 to-amber-500 rounded-full w-[97%]"></div>
-            <span class="relative z-10 text-xs font-bold text-white">👥 97 de 100 cupos reservados</span>
-            <span class="relative z-10 text-xs font-black text-slate-950 bg-amber-300 px-2.5 py-0.5 rounded-full animate-pulse">¡Solo 3 Cupos!</span>
-          </div>
-        </div>
+        <p class="text-slate-200 text-sm sm:text-base md:text-lg font-medium max-w-2xl mx-auto leading-relaxed">
+          Accede de por vida a toda la biblioteca de +850 mil diseños por solo <strong class="text-white font-black underline decoration-amber-400 decoration-2">$9 USD</strong> (Precio regular: $90 USD) antes de que expire el contador.
+        </p>
       </div>
     </section>
 
@@ -323,12 +320,15 @@
         </div>
 
         <div class="text-center">
-          <button
-            onclick="scrollToOffer()"
-            class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white font-black text-base sm:text-lg md:text-xl px-8 sm:px-12 py-4 sm:py-5 rounded-2xl shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer w-full sm:w-auto"
+          <a
+            href="https://pay.hotmart.com/K107552904L?checkoutMode=10"
+            data-hotmart-checkout="true"
+            id="gallery-checkout-cta"
+            class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-base sm:text-lg md:text-xl px-8 sm:px-12 py-4 sm:py-5 rounded-2xl shadow-xl shadow-amber-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 border-b-4 border-amber-600 cursor-pointer w-full sm:w-auto"
           >
-            <span>🔥 ¡SÍ! ¡Quiero tener acceso a todas las artes ahora mismo!</span>
-          </button>
+            <span>Quiero tener acceso a todas las artes ahora mismo</span>
+            <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
         </div>
 
       </div>
@@ -343,7 +343,7 @@
           </h2>
         </div>
         <div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-pink-100 shadow-xl space-y-4 sm:space-y-5">
-          <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">ACCESO VITALICIO (cupos limitados)</p></div>
+          <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">ACCESO VITALICIO INMEDIATO (Precio Promocional)</p></div>
           <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">Recibes actualizaciones semanales con nuevos materiales</p></div>
           <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">No pagas mensualidad, el pago es único</p></div>
           <div class="flex items-start gap-3.5 p-2 rounded-xl hover:bg-pink-50/50"><span class="text-emerald-500 font-bold text-xl">✓</span><p class="text-slate-800 text-base sm:text-lg font-bold">Acceso a +850 mil diseños para sublimación y otros materiales</p></div>
@@ -359,7 +359,7 @@
     <section id="second-countdown-cta" class="py-12 sm:py-16 bg-gradient-to-r from-rose-700 via-pink-600 to-amber-600 text-white relative text-center">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight mb-6">
-          Tu cupo con 90% OFF expira en:
+          Esta oferta especial con 90% OFF expira en:
         </h2>
 
         <!-- Timer -->
@@ -440,6 +440,15 @@
             <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +20.000 Fuentes Profesionales</span><span class="font-bold text-slate-500 font-mono">$9</span></div>
             <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +50.000 Presets de Fotografía</span><span class="font-bold text-slate-500 font-mono">$9</span></div>
             <div class="py-3 flex items-center justify-between"><span class="font-bold text-slate-800">✓ +60.000 Logotipos Editables</span><span class="font-bold text-slate-500 font-mono">$9</span></div>
+            <div class="pt-4 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-t-2 border-slate-200 bg-amber-50/70 -mx-4 sm:-mx-8 px-4 sm:px-8 mt-2">
+              <div class="text-xs sm:text-sm text-slate-600">
+                <span>Valor total por separado: <strong class="line-through text-slate-500 font-mono">$168 USD</strong></span>
+                <span class="block text-slate-800 font-bold">Precio normal del paquete: <strong class="text-slate-900">$90 USD</strong></span>
+              </div>
+              <div class="text-xs sm:text-sm font-black text-emerald-800 bg-emerald-100/90 border border-emerald-300 px-3 py-1.5 rounded-xl text-center self-start sm:self-auto">
+                Hoy en promoción: 90% OFF ($9 USD)
+              </div>
+            </div>
           </div>
 
           <div class="bg-white p-6 sm:p-10 border-t border-slate-100 text-center flex flex-col items-center">
@@ -447,7 +456,7 @@
             <!-- Badge: Oferta por tiempo limitado -->
             <div class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200/80 text-amber-700 text-xs sm:text-sm font-semibold mb-3 shadow-xs">
               <span class="text-amber-500 text-sm">⚡</span>
-              <span>Oferta por tiempo limitado</span>
+              <span>Oferta por tiempo limitado (90% OFF)</span>
             </div>
 
             <!-- Título Limpio -->
@@ -457,8 +466,7 @@
 
             <!-- Ancoragem Limpa e Despoluída -->
             <div class="text-center my-3 space-y-0.5">
-              <p class="text-slate-400 text-sm sm:text-base line-through font-medium">De $19 USD</p>
-              <p class="text-slate-500 text-xs sm:text-sm font-semibold uppercase tracking-wider">por solo</p>
+              <p class="text-slate-400 text-sm sm:text-base line-through font-medium">De $90 USD</p>
               <div class="text-5xl sm:text-6xl md:text-7xl font-black text-rose-600 tracking-tight my-1">
                 $9 USD
               </div>
@@ -597,10 +605,43 @@
       </div>
     </section>
 
+    <!-- 15. FINAL CALL TO ACTION SECTION -->
+    <section id="final-cta-section" class="py-14 sm:py-20 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 text-white text-center border-t border-slate-800">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="inline-flex items-center gap-2 bg-amber-400/20 border border-amber-400/40 text-amber-300 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-4 uppercase tracking-wider">
+          <span>⚡ Acceso Vitalicio Inmediato</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight mb-4">
+          Comienza a estampar y vender hoy mismo
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-6 leading-relaxed">
+          Asegura los +850 mil diseños, todas las actualizaciones semanales y los 6 bonos exclusivos por solo <strong class="text-amber-300 font-bold">$9 USD</strong> (90% OFF).
+        </p>
+        <div class="flex flex-col items-center">
+          <a
+            href="https://pay.hotmart.com/K107552904L?checkoutMode=10"
+            data-hotmart-checkout="true"
+            id="final-hotmart-cta"
+            class="w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-5 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-lg sm:text-xl rounded-2xl shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-3 border-b-4 border-amber-600 cursor-pointer animate-pulse-cta"
+          >
+            <span>¡SÍ! Quiero acceder a todos los diseños ahora mismo</span>
+            <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <div class="flex flex-wrap items-center justify-center gap-3 text-xs font-semibold text-slate-400 mt-4">
+            <span>🔒 Pago 100% seguro por Hotmart</span>
+            <span>•</span>
+            <span>🛡️ 7 días de garantía</span>
+            <span>•</span>
+            <span>⚡ Entrega digital inmediata</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- 15. FOOTER -->
-  <footer id="main-footer" class="bg-slate-950 text-slate-400 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
+  <!-- 16. FOOTER -->
+  <footer id="main-footer" class="bg-slate-950 text-slate-400 py-12 sm:py-16 pb-28 sm:pb-16 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
     <div class="max-w-6xl mx-auto">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800 text-center sm:text-left">
         <div class="flex items-center gap-4">
@@ -622,124 +663,30 @@
     </div>
   </footer>
 
-  <!-- CHECKOUT MODAL -->
-  <div id="checkout-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/70 backdrop-blur-xs">
-    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border-2 border-pink-200 relative">
-      <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1.5 rounded-full hover:bg-slate-100 transition-colors text-xl font-bold cursor-pointer">
-        ✕
-      </button>
-
-      <div id="modal-form-view">
-        <div class="text-center mb-6">
-          <span class="inline-block bg-pink-100 text-pink-700 text-xs font-black px-3 py-1 rounded-full uppercase mb-2">
-            ⚡ Pago Seguro Cifrado 256 bits
-          </span>
-          <h3 class="text-2xl font-black text-slate-900">
-            Estás a un paso de acceder a todos los diseños
-          </h3>
-          <p class="text-sm text-slate-600 mt-1">
-            Acceso vitalicio con precio promocional por solo <strong class="text-pink-600 font-bold">US$9</strong>
-          </p>
+  <!-- STICKY MOBILE BOTTOM BAR (PROBLEMA 5) -->
+  <div id="sticky-mobile-cta" class="fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-md border-t border-amber-500/40 p-3 sm:hidden shadow-2xl">
+    <div class="max-w-md mx-auto flex items-center justify-between gap-3">
+      <div class="flex flex-col">
+        <span class="text-[10px] text-slate-400 line-through leading-none">De $90 USD</span>
+        <div class="flex items-center gap-1.5 mt-0.5">
+          <span class="text-xl font-black text-amber-300 leading-none">$9 USD</span>
+          <span class="text-[10px] font-black bg-rose-600 text-white px-1.5 py-0.5 rounded leading-none">90% OFF</span>
         </div>
-
-        <form onsubmit="handleModalSubmit(event)" class="space-y-4">
-          <div>
-            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nombre Completo</label>
-            <input type="text" id="buyer-name" required placeholder="Ej. Juan Pérez" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500" />
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Correo Electrónico (Aquí recibirás tus accesos)</label>
-            <input type="email" id="buyer-email" required placeholder="tu-correo@ejemplo.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500" />
-          </div>
-          <div class="bg-amber-50 rounded-xl p-3 border border-amber-200 text-xs text-amber-900">
-            <strong>🔒 Garantía incondicional de satisfacción</strong>
-            <p class="text-slate-600 mt-0.5">Acceso vitalicio inmediato a los materiales a través de Hotmart.</p>
-          </div>
-          <button type="submit" class="w-full py-4 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-black text-lg rounded-xl shadow-lg border-b-4 border-amber-600 cursor-pointer">
-            COMPLETAR ACCESO POR US$9
-          </button>
-        </form>
       </div>
-
-      <div id="modal-success-view" class="hidden text-center py-6 space-y-4">
-        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-3xl font-black">
-          ✓
-        </div>
-        <h3 class="text-2xl font-black text-slate-900" id="success-title">
-          ¡Felicitaciones!
-        </h3>
-        <p class="text-sm text-slate-600 max-w-sm mx-auto">
-          En un entorno real de ventas, aquí el comprador es redirigido a Hotmart para completar la orden.
-        </p>
-        <div class="bg-pink-50 p-4 rounded-2xl border border-pink-100 text-xs text-slate-700" id="success-email-notice">
-          Hemos enviado las credenciales de prueba.
-        </div>
-        <button onclick="closeCheckoutModal()" class="px-6 py-2.5 bg-slate-900 text-white text-sm font-bold rounded-xl cursor-pointer">
-          Volver a la página
-        </button>
-      </div>
-
+      <a
+        href="https://pay.hotmart.com/K107552904L?checkoutMode=10"
+        data-hotmart-checkout="true"
+        id="sticky-checkout-cta"
+        class="flex-1 py-3 px-4 bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-400 text-slate-950 font-black text-sm rounded-xl shadow-lg border-b-2 border-amber-600 flex items-center justify-center gap-1 text-center active:scale-[0.98] transition-transform"
+      >
+        <span>Acceder ahora</span>
+        <span class="text-base font-black">→</span>
+      </a>
     </div>
   </div>
 
   <!-- EMBEDDED JAVASCRIPT LOGIC -->
   <script>
-    // Smooth scroll to "Tu cupo con 90% OFF expira en:"
-    function scrollToCountdown() {
-      const section = document.getElementById('second-countdown-cta');
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
-
-    // Smooth scroll to offer
-    function scrollToOffer() {
-      const section = document.getElementById('value-stack-section');
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-
-    // Modal controls
-    function openCheckoutModal() {
-      const modal = document.getElementById('checkout-modal');
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-    }
-
-    function closeCheckoutModal() {
-      const modal = document.getElementById('checkout-modal');
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-      document.getElementById('modal-form-view').classList.remove('hidden');
-      document.getElementById('modal-success-view').classList.add('hidden');
-    }
-
-    function handleModalSubmit(e) {
-      e.preventDefault();
-      const email = document.getElementById('buyer-email').value;
-      const name = document.getElementById('buyer-name').value;
-      
-        let checkoutUrl = 'https://pay.hotmart.com/K107552904L?checkoutMode=10';
-        if (email) {
-          try {
-            const u = new URL(checkoutUrl);
-            u.searchParams.set('email', email);
-            if (name) u.searchParams.set('name', name);
-            checkoutUrl = u.toString();
-          } catch (err) {}
-        }
-
-      if (window.HotmartTracking) {
-        const finalUrl = window.HotmartTracking.triggerCheckout(checkoutUrl);
-        setTimeout(() => {
-          window.location.href = finalUrl;
-        }, 150);
-      } else {
-        window.location.href = checkoutUrl;
-      }
-    }
-
     // 1. Top Bar Countdown (14:59 loop)
     (function initTopCountdown() {
       let timeLeft = 14 * 60 + 59;
